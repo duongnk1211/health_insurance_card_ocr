@@ -1,0 +1,23 @@
+# 1. Install Tesseract-ocr
+    - Download tesseract exe from: https://github.com/UB-Mannheim/tesseract/wiki.
+    (tesseract-ocr-w64-setup-5.4.0.20240606.exe)
+    - Install this exe in C:/Program Files/Tesseract-OCR
+
+# 2. Download lib
+    - Download vie.traineddata from: https://github.com/tesseract-ocr/tessdata/blob/main/vie.traineddata 
+    - Copy file "vie.traineddata" in C:/Program Files/Tesseract-OCR/tessdata/
+
+
+# 3. Set env lib
+    - Install python, conda
+    Set env lib
+    ```
+    pip install -r requirements.txt
+    ```
+# 4. RUN and Build
+    - Run: python MainGUI.py
+        + For video, camera: Use file src\config.py line 7: CAMERA_DEVICE (ID camera or path video)
+        Button Camera -> Button capture (to capture photo)-> Result
+        + For photo: Click Image -> choose desire photo -> Result
+        + STOP: cancel programme, run from start (video, photo)
+    - Build app: pyinstaller --onefile --windowed --icon=GUI\ico.ICO MainGUI.py
