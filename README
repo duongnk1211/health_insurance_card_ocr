@@ -9,8 +9,9 @@
 
 
 # 3. Set env lib
-    - Install python, conda
-    Set env lib
+    - Create conda environment 
+    ```conda create -n hicard_ocr python=3.8```
+    - Install libraries and dependencies
     ```
     pip install -r requirements.txt
     ```
